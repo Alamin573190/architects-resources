@@ -41,7 +41,8 @@ ul a {
 }
 
 .nav-title,
-.features-title {
+.features-title,
+.sponsor-title {
     color: #131313;
     font-size: 40px;
     font-weight: 700;
@@ -147,7 +148,8 @@ header {
 
 
 /* features-love-enjoy related style */
-.features-love-enjoy ,.facts-section {
+.features-love-enjoy,
+.facts-section {
     margin: 0 200px;
 }
 
@@ -209,42 +211,82 @@ header {
     font-size: 20px;
     font-weight: 500;
     line-height: 35px;
-} 
+}
+
 /* facts related style */
-.facts-containar{
+.facts-containar {
     margin-top: 50px;
 }
-.facts-contain{
+
+.facts-contain {
     width: 50%;
 }
-.facts-card h2{
-    color:  #424242;
+
+.facts-card h2 {
+    color: #424242;
     font-size: 44px;
     font-weight: 600;
-    
+
 }
-.facts-box{
+
+.facts-box {
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
-    
-    
+
+
 }
-.facts-card p{
+
+.facts-card p {
     margin-top: 0;
 }
-.facts-card{
-  
+
+.facts-card {
+
     text-align: center;
-     border-radius: 8px;
+    border-radius: 8px;
     border: 1px solid #FF900E;
     margin: 50px 0px;
     width: 200px;
     padding: 20px 0px;
-  
+
 }
 
+/* sponsor related style */
 
+.sponsor-section {
+    margin: 0px 200px;
+}
+
+.sponsor-content {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.sponsor-containar {
+    margin: 50px 0px;
+}
+
+.sponsor-image {
+    text-align: center;
+}
+
+.sponsor-image img {
+    padding: 20px;
+    width: 150px;
+}
+
+/* footer related style */
+
+footer {
+    padding: 10px;
+    margin: 20px 200px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+}
 
 /* responsive style */
 @media screen and (max-width:576px) {
@@ -255,7 +297,8 @@ header {
     nav,
     .features-love-enjoy-containar,
     .feature-love-enjoy-content,
-    .feature-love-enjoy-image , .facts-box {
+    .feature-love-enjoy-image,
+    .facts-box {
         flex-direction: column;
         width: 100%;
 
@@ -271,7 +314,7 @@ header {
         flex-direction: column-reverse;
     }
 
-    .features-section {
+    .features-section , footer  {
         margin: 0 50px;
     }
 
@@ -280,7 +323,9 @@ header {
         flex-direction: column;
     }
 
-    .features-love-enjoy , .facts-section {
+    .features-love-enjoy,
+    .facts-section,
+    .sponsor-section {
         margin: 20px 50px;
     }
 
@@ -305,10 +350,13 @@ header {
         left: 0px;
 
     }
-    .facts-contain{
+
+    .facts-contain,
+    .sponsor-content {
         width: 100%;
     }
-    .facts-card{
+
+    .facts-card {
         width: 50%;
         margin: 0 auto;
     }
@@ -332,7 +380,8 @@ header {
     }
 
     .features-section,
-    .features-love-enjoy  {
+    .features-love-enjoy,
+    .sponsor-section ,footer {
         margin: 20px 100px;
     }
 
@@ -344,20 +393,25 @@ header {
         display: flex;
         flex-direction: column;
     }
-    .facts-contain{
+
+    .facts-contain,
+    .sponsor-content {
         width: 100%;
         text-align: center;
     }
-    .facts-section{
+
+    .facts-section {
         margin: 20px 50px;
     }
-    .facts-box{
+
+    .facts-box {
         display: grid;
-        grid-template-rows:repeat(2,1fr) ;
+        grid-template-rows: repeat(2, 1fr);
     }
-    .facts-card{
+
+    .facts-card {
         margin: 0 auto;
     }
- 
+
 
 }
